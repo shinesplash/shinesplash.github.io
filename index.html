@@ -5,28 +5,90 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ShineSplash — managed content services for brands</title>
 <meta name="description" content="ShineSplash runs content distribution and social page management for brands and publishers.">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/bricolage-grotesque-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-<header><div class="wrap">
-  <a class="logo" href="/">Shine<span>Splash</span></a>
-  <nav><a href="/" aria-current="page">Home</a><a href="/privacy/">Privacy</a><a href="/data-deletion/">Delete my data</a></nav>
+<body class="home">
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="/"><img src="/assets/mark-64.png" width="32" height="32" alt=""><span class="name">Shine<span>Splash</span></span></a>
+  <nav aria-label="Main">
+    <a class="nav-link" href="#services">Services</a><a class="nav-link" href="#how">How we work</a><a class="nav-link" href="#contact">Contact</a>
+    <a class="btn btn-small" href="https://app.shinesplash.com/signin">Sign in</a>
+  </nav>
 </div></header>
-<main><div class="wrap">
-  <h1>Managed content services for brands</h1>
-  <p class="lede">ShineSplash runs the day-to-day work of getting a brand's content in front of more people: on news and content platforms, and on its social pages.</p>
 
-  <div class="cards">
-    <div class="card"><h3>Content syndication</h3><p>We prepare, review and deliver brands' articles to content platforms and news apps, under the brand's own name and accounts.</p></div>
-    <div class="card"><h3>Social page management</h3><p>We plan, create and post content for brands' Facebook, Instagram and Threads pages, and report on how it performs.</p></div>
-  </div>
+<main>
+  <section class="hero">
+    <picture>
+      <source media="(max-width: 700px)" srcset="/assets/img/hero-splash-burst-960.webp">
+      <img class="hero-bg" src="/assets/img/hero-splash-burst-1920.webp" width="1920" height="1080" alt="">
+    </picture>
+    <div class="wrap hero-copy">
+      <p class="eyebrow"><span class="spark" aria-hidden="true"></span>Managed content services</p>
+      <h1>Your brand's content, out where people read it.</h1>
+      <p class="lede">We run the day-to-day work of getting a brand's content in front of more people: on news and content platforms, and on its social pages.</p>
+      <p class="actions"><a class="btn" href="#contact">Talk to us</a><a class="btn btn-ghost" href="https://app.shinesplash.com/signin">Client sign in</a></p>
+    </div>
+  </section>
 
-  <h2>How we work</h2>
-  <p>Every piece of content is checked by a person before it goes out, and it follows each platform's rules. Our clients keep ownership of their accounts and their content.</p>
+  <section id="services" class="wrap section">
+    <h2 class="section-title">What we do</h2>
+    <div class="services">
+      <article class="service">
+        <img src="/assets/img/svc-syndication-900.webp" width="900" height="675" alt="" loading="lazy">
+        <div class="service-body">
+          <h3>Content syndication</h3>
+          <p>We prepare, review and deliver brands' articles to content platforms and news apps, under the brand's own name and accounts.</p>
+        </div>
+      </article>
+      <article class="service">
+        <img src="/assets/img/svc-social-900.webp" width="900" height="675" alt="" loading="lazy">
+        <div class="service-body">
+          <h3>Social page management</h3>
+          <p>We plan, create and post content for brands' Facebook, Instagram and Threads pages, and report on how it performs.</p>
+        </div>
+      </article>
+    </div>
+  </section>
 
-  <h2>Contact</h2>
-  <p>Email <a href="mailto:admin@shinesplash.com">admin@shinesplash.com</a>.</p>
-</div></main>
-<footer><div class="wrap"><span>© 2026 ShineSplash</span><a href="/privacy/">Privacy policy</a><a href="/data-deletion/">Delete my data</a></div></footer>
+  <section id="how" class="section how-band">
+    <div class="wrap how">
+      <img src="/assets/img/how-review-900.webp" width="900" height="675" alt="" loading="lazy">
+      <div>
+        <h2 class="section-title">How we work</h2>
+        <ul class="points">
+          <li><strong>A person checks everything.</strong> Every piece of content is reviewed by a person before it goes out.</li>
+          <li><strong>Platform rules come first.</strong> Each platform has its own rules, and we follow them.</li>
+          <li><strong>You stay in charge.</strong> Our clients keep ownership of their accounts and their content.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap section">
+    <div class="contact">
+      <div>
+        <h2>Let's talk</h2>
+        <p>Tell us about your brand and where you would like your content to go.</p>
+      </div>
+      <form class="contact-form" method="post" action="https://app.shinesplash.com/contact">
+        <label>Your name<input name="name" autocomplete="name" maxlength="100" required></label>
+        <label>Your e-mail<input name="email" type="email" autocomplete="email" maxlength="200" required></label>
+        <label class="wide">Message<textarea name="message" rows="5" maxlength="5000" required></textarea></label>
+        <label class="hp" aria-hidden="true">Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label>
+        <p class="wide form-foot"><button class="btn btn-shine" type="submit">Send message</button>
+          <span>We reply by e-mail, usually within two business days. See our <a href="/privacy/">privacy policy</a>.</span></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot"><div class="wrap">
+  <span class="brand brand-small"><img src="/assets/mark-64.png" width="20" height="20" alt="">ShineSplash</span>
+  <a href="https://app.shinesplash.com/signin">Client sign in</a><a href="/privacy/">Privacy policy</a><a href="/data-deletion/">Delete my data</a>
+  <span class="copy">© 2026 ShineSplash</span>
+</div></footer>
 </body>
 </html>
