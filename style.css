@@ -3,7 +3,7 @@
 @font-face { font-family: "Hanken Grotesk"; src: url("/assets/fonts/hanken-grotesk-latin-wght-normal.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
 
 :root {
-  --surface: #f7faf9; --raised: #ffffff; --sunken: #e9f2ef; --line: #d6dfdc;
+  --surface: #f7faf9; --raised: #ffffff; --sunken: #e9efed; --line: #d6dfdc;
   --ink: #14201e; --muted: #4c5b57;
   --splash: #0c6f65; --splash-deep: #08433d; --aqua: #4cc4b5; --splash-soft: #d9eeea; --on-splash: #ffffff;
   --shine: #f2bd2c; --on-shine: #14201e; --coral: #ff7a59;
