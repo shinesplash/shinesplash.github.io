@@ -19,8 +19,8 @@
 <header class="site-head"><div class="wrap">
   <a class="brand" href="/"><picture><source media="(prefers-color-scheme: dark)" srcset="/assets/lockup-dark-240.png"><img class="brand-logo" src="/assets/lockup-light-240.png" width="199" height="40" alt="ShineSplash"></picture></a>
   <nav aria-label="Main">
-    <a class="nav-link" href="#services">Services</a><a class="nav-link" href="#how">How we work</a><a class="nav-link" href="#contact">Contact</a>
-    <a class="btn btn-small" href="https://app.shinesplash.com/signin">Sign in</a>
+    <a class="nav-link" href="#services">Services</a><a class="nav-link" href="#contact">Contact</a>
+    <a data-brand="consoleUrl" class="btn btn-small" href="https://app.shinesplash.com/signin">Sign in</a>
   </nav>
 </div></header>
 
@@ -34,7 +34,7 @@
       <p class="eyebrow"><span class="spark" aria-hidden="true"></span>Managed content services</p>
       <h1>Your brand's content, out where people read it.</h1>
       <p class="lede">We run the day-to-day work of getting a brand's content in front of more people: on news and content platforms, and on its social pages.</p>
-      <p class="actions"><a class="btn" href="#contact">Talk to us</a><a class="btn btn-ghost" href="https://app.shinesplash.com/signin">Client sign in</a></p>
+      <p class="actions"><a class="btn" href="#contact">Talk to us</a><a data-brand="consoleUrl" class="btn btn-ghost" href="https://app.shinesplash.com/signin">Client sign in</a></p>
     </div>
   </section>
 
@@ -58,27 +58,13 @@
     </div>
   </section>
 
-  <section id="how" class="section how-band">
-    <div class="wrap how">
-      <img src="/assets/img/how-review-900.webp" width="900" height="675" alt="" loading="lazy">
-      <div>
-        <h2 class="section-title">How we work</h2>
-        <ul class="points">
-          <li><strong>A person checks everything.</strong> Every piece of content is reviewed by a person before it goes out.</li>
-          <li><strong>Platform rules come first.</strong> Each platform has its own rules, and we follow them.</li>
-          <li><strong>You stay in charge.</strong> Our clients keep ownership of their accounts and their content.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
   <section id="contact" class="wrap section">
     <div class="contact">
       <div>
         <h2>Let's talk</h2>
         <p>Tell us about your brand and where you would like your content to go.</p>
       </div>
-      <form class="contact-form" method="post" action="https://app.shinesplash.com/contact">
+      <form data-brand="consoleUrl" class="contact-form" method="post" action="https://app.shinesplash.com/contact">
         <label>Your name<input name="name" autocomplete="name" maxlength="100" required></label>
         <label>Your e-mail<input name="email" type="email" autocomplete="email" maxlength="200" required></label>
         <label class="wide">Message<textarea name="message" rows="5" maxlength="5000" required></textarea></label>
@@ -92,7 +78,7 @@
 
 <footer class="site-foot"><div class="wrap">
   <span class="brand brand-small"><img src="/assets/crown-64.png" width="20" height="20" alt="">ShineSplash</span>
-  <a href="https://app.shinesplash.com/signin">Client sign in</a><a href="/privacy/">Privacy policy</a><a href="/data-deletion/">Delete my data</a>
+  <a data-brand="consoleUrl" href="https://app.shinesplash.com/signin">Client sign in</a><a href="/privacy/">Privacy policy</a><a href="/data-deletion/">Delete my data</a>
   <p class="a11y-note">Accessible formats and communication supports are available on request, at no extra cost. Tell us through the <a href="#contact">contact form</a> and we will answer within <span data-retention="accessibility_reply_business_days">10 business days</span>.</p>
   <label class="motion-stop"><input type="checkbox" id="motion-stop"> Stop the moving background</label>
   <span class="copy">© 2026 ShineSplash</span>
